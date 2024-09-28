@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeBackgroundColor</title>
+</head>
+<body>
+    <h1>Clique em um cor para mudar o Fundo da pagina</h1>
+    <div class="color-box red" onclick="changeColor('red' )"></div>
+    <div class="color-box green" onclick="changeColor('green' ) "></div>
+    <div class="color-box blue" onclick="changeColor('blue' ) "></div>
+    <div class="color-box yellow" onclick="changeColor('yellow' )"></div>
+    <div class="color-box purple" onclick="changeColor('purple' )"></div>
+    <style>
+        .color-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .red {background-color: red;}
+        .green {background-color: green;}
+        .blue {background-color: blue;}
+        .yellow {background-color:yellow;}
+        .purple {background-color: purple;}
+    </style>
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
